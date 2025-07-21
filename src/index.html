@@ -1,166 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 20px;
-        color: #333;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    h1 {
-        color: #2c3e50;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
-    }
-    h2 {
-        color: #2980b9;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 5px;
-        margin-top: 20px;
-    }
-    .header {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .contact-info {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-    .section {
-        margin-bottom: 25px;
-    }
-    .project {
-        margin-bottom: 20px;
-    }
-    .skills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    .skill-category {
-        flex: 1;
-        min-width: 200px;
-    }
-    ul {
-        padding-left: 20px;
-    }
-    a {
-        color: #3498db;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-<div class="header">
-  <h1>AYYAPPA</h1>
-  <div class="contact-info">
-    <span>Bangalore</span>
-    <span>|</span>
-    <span>7090224137</span>
-    <span>|</span>
-    <span><a href="mailto:ayyurk61@gmail.com">ayyurk61@gmail.com</a></span>
-    <span>|</span>
-    <span><a href="https://github.com/Ayyappa4137" target="_blank">https://github.com/Ayyappa4137</a></span>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.5wkIWkXOsEugILo2S4LFqgHaHa?pid=Api&P=0&h=180" alt="Logo" width="100" height="100">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Mens</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Jeans</a></li>
+            <li><a class="dropdown-item" href="#">Shirts</a></li>
+            <li><a class="dropdown-item" href="#">Tshirts</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Womens</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kurthas</a></li>
+            <li><a class="dropdown-item" href="#">Saree</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Fashion dress</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Kids</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ethics</a></li>
+            <li><a class="dropdown-item" href="#">Shirts</a></li>
+            <li><a class="dropdown-item" href="#">Tshirts</a></li>
+            <li><a class="dropdown-item" href="#">Pants</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Others</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Home appliances</a></li>
+            <li><a class="dropdown-item" href="#">Jewelleries</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="mainCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.0Bc4pTct3VbmevY_ozOF5AHaCU?pid=Api&P=0&h=180" class="d-block w-100%" style="height: 400px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.R1j-RxygGhokWD9_NqYhKQHaDJ?pid=Api&P=0&h=180" class="d-block w-100" style="height: 400px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.OMQ7o_q0B0g88nRdrmaZCwHaDt?pid=Api&P=0&h=180" class="d-block w-100" style="height: 400px; object-fit: cover;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!-- Cards Section -->
+<div class="container mb-5">
+  <h3 class="text-primary text-center mb-4">FASHION</h3>
+  <div class="row justify-content-center">
+    <!-- Men's Fashion Card -->
+    <div class="col-md-6 col-lg-2 sm-3">
+      <div class="card h-100">
+        <a href="products.html?category=men" style="text-decoration: none; color: inherit;">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.n7fne71XsT_EwF1MFzrMHQAAAA?pid=Api&P=0&h=180" class="card-img-top" style="height: 150px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Men's Fashion</h5>
+            <p class="card-text">Trendy outfits for men and all branded collections"</p>
+            <p class="card-text"> </p>
+
+            <a href="https://www.myntra.com/men-tshirts" class="btn btn-primary">Shop Now</a>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Women's Fashion Card -->
+    <div class="col-md-6 col-lg-2 sm-3">
+      <div class="card h-100">
+        <a href="products.html?category=women" style="text-decoration: none; color: inherit;">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.gVp8kTgvzQjXl5UjQ902zwHaJQ?pid=Api&P=0&h=180" class="card-img-top" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Women's Fashion</h5>
+            <p class="card-text">Elegant collections</p>
+            <a href="https://www.ajio.com/shop/women" class="btn btn-primary">Shop Now</a>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Kids Collection Card -->
+    <div class="col-md-6 col-lg-2 sm-3">
+      <div class="card h-100">
+        <a href="products.html?category=kids" style="text-decoration: none; color: inherit;">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.vzqWEtA1Rzk9tgmSjttfhAHaDj?pid=Api&P=0&h=180" class="card-img-top" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Kids Collection</h5>
+            <p class="card-text">Adorable outfits</p>
+            <a href="https://www.firstcry.com/clothes-and-shoes/6/0/0?sort=BestSeller&ref=BSN!BSN_CAT_CH-All!&msclkid=92e8b93dca751a371e91d1443a2af92f&utm_source=bing&utm_medium=cpc&utm_campaign=BSN_CAT_CH-All&utm_term=children%20clothes&utm_content=Children%20Clothes" class="btn btn-primary">Shop Now</a>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-2 sm-3">
+      <div class="card h-100">
+        <a href="products.html?category=women" style="text-decoration: none; color: inherit;">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.vGLCM5uzmR1IYHqHnBN3OgHaEK?pid=Api&P=0&h=180" class="card-img-top" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">mobile collection</h5>
+            <p class="card-text"> click below</p>
+
+            <a href="  https://www.99mobile.in/best-mobile" class="btn btn-primary">Shop Now</a>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-2 sm-3">
+      <div class="card h-100">
+        <a href="products.html?category=women" style="text-decoration: none; color: inherit;">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.6318uXSSsDWjlcpXhneSfAHaHX?pid=Api&P=0&h=180" class="card-img-top" style="height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">other collections</h5>
+            <p class="card-text"> Home appliances </p>
+
+            <a href="https://www.croma.com/home-appliances/c/5" class="btn btn-primary">Shop Now</a>
+
+          </div>
+        </a>
+      </div>
+    </div>
+
   </div>
 </div>
-
-<div class="section">
-  <h2>SUMMARY</h2>
-  <p>
-    Motivated and detail-oriented individual with hands-on experience in real-time object detection using
-    Python and OpenCV. Familiar with implementing deep learning models like MobileNet SSD for object
-    recognition. Strong understanding of computer vision concepts and basic programming logic. Quick learner
-    with good problem-solving skills, eager to apply technical knowledge and grow in the IT or data-related
-    field.
-  </p>
-</div>
-
-<div class="section">
-  <h2>TECHNICAL SKILLS</h2>
-  <div class="skills">
-    <div class="skill-category">
-      <ul>
-        <li><strong>Programming Languages:</strong> Java, Python, C++</li>
-        <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <ul>
-        <li><strong>Databases:</strong> MySQL</li>
-        <li><strong>Tools & Platforms:</strong> Git, VS Code</li>
-      </ul>
-    </div>
-    <div class="skill-category">
-      <ul>
-        <li><strong>Cloud & DevOps:</strong> GitHub Actions</li>
-        <li><strong>Other:</strong> MS Excel</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="section">
-  <h2>PROJECT</h2>
-  <div class="project">
-    <h3>Project Title: Real-Time Object Detection Using OpenCV (Jan 2024 - Apr 2024)</h3>
-    <p><strong>Tools & Technologies:</strong> Python, OpenCV, MobileNet SSD, Caffe Model, Tkinter (for GUI)</p>
-    <p><strong>Project Description:</strong> Developed a Python-based real-time object detection system using OpenCV and a pre-trained
-      MobileNet SSD model. The system detects multiple objects through the webcam feed and displays bounding boxes with
-      class labels and confidence levels.</p>
-
-    <h4>Key Responsibilities:</h4>
-    <ul>
-      <li>Integrated MobileNet SSD model with OpenCV's DNN module.</li>
-      <li>Designed a user-friendly GUI using Tkinter with start/stop camera buttons.</li>
-      <li>Applied confidence filtering to remove weak detections.</li>
-      <li>Optimized detection for real-time performance on laptop webcam.</li>
-      <li>Implemented UI improvements like bigger frames, buttons, and background image.</li>
-    </ul>
-
-    <h4>Key Learnings:</h4>
-    <ul>
-      <li>Deepened understanding of computer vision and deep learning concepts.</li>
-      <li>Gained hands-on experience with real-time image processing.</li>
-      <li>Improved skills in GUI development, model integration, and Python coding.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="section">
-  <h2>EDUCATION</h2>
-  <p><strong>Master of Computer Application</strong><br>
-    Angadi Institute of technology and management Belagavi<br>
-    Feb 2023 - Sep 2024</p>
-</div>
-
-<div class="section">
-  <h2>CERTIFICATIONS</h2>
-  <ul>
-    <li>Completed Certification Course for Diploma in advance web designing from KEONICS HUBLI.</li>
-    <li>Completed Certification Course for Operating System from National Programme on Technology Enhanced Learning (NPTEL)</li>
-  </ul>
-</div>
-
-<div class="section">
-  <h2>SOFT SKILLS</h2>
-  <ul>
-    <li><strong>Problem-Solving:</strong> You have shown strong analytical thinking in resolving coding and query-related issues effectively.</li>
-    <li><strong>Responsibility:</strong> Takes ownership of work and stays committed.</li>
-    <li><strong>Learning Mindset:</strong> Always willing to learn and improve.</li>
-  </ul>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
+<footer class="bg-dark text-white pt-4 pb-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>We offer the best fashion items at affordable prices.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Home</a></li>
+          <li><a href="#" class="text-white">Shop</a></li>
+          <li><a href="#" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <a href="#" class="text-white me-2">Facebook</a>
+        <a href="#" class="text-white me-2">Instagram</a>
+        <a href="#" class="text-white">Twitter</a>
+      </div>
+    </div>
+    <hr class="bg-white">
+    <p class="text-center mb-0">&copy; 2025 FashionSite. All Rights Reserved.</p>
+  </div>
+</footer>
 </html>
